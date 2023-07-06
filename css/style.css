@@ -1,7 +1,9 @@
 @import url(reset.css);
+@import url(titles.css);
 @import url(buttons.css);
 @import url(header.css);
 @import url(companies.css);
+@import url(features.css);
 
 body {
   font-family: Montserrat, sans-serif;
