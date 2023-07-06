@@ -1,0 +1,98 @@
+.header {
+  /* border: 3px solid black; */
+  display: flex;
+  padding: 62px 50px 0px 50px;
+  font-family: "Source Code Pro";
+  font-style: normal;
+  line-height: normal;
+  background-color: #f4f4f4;
+  height: 100vh;
+}
+.header__row {
+  display: flex;
+  height: 100%;
+}
+.header__about {
+  width: 50%;
+  margin: 0 auto 0 0;
+}
+.header__top {
+}
+.header__nav {
+}
+.nav {
+  line-height: normal;
+  font-size: 22px;
+  font-weight: 250;
+}
+.nav__list {
+  display: flex;
+  /* border: 1px solid black; */
+}
+.nav__item:not(:last-child) {
+  margin: 0 26px 0 0;
+}
+.nav__item:not(:last-child)::after {
+  content: '';
+	width: 3px;
+	height: 3px;
+	background-color: #000;
+	display: inline-block;	
+	position: relative;
+	top: -15%;
+	left: 10%;
+}
+.nav__link {
+  color: #000;
+}
+
+.header__article {
+  font-size: 60px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  margin: 0 0 145px 0;
+  position: relative;
+}
+.header__article::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background: url("../img/first-screen/bad-lines.png");
+  width: 76px;
+  height: 74px;
+  bottom: -60%;
+  left: 0;
+}
+.header__describe {
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 375px;
+  margin: 0 0 111px 0;
+}
+.header__button {
+}
+.button__main {
+}
+.header__image {
+  position: relative;
+  background-color: #000;
+  z-index: 1;
+  width: 50%;
+}
+.header__man {
+  position: relative;
+  top: 0%;
+  left: 30%;
+}
+.header__code {
+  position: absolute;
+  top: 36%;
+  left: -35%;
+  z-index: -1;
+}
+.header__line {
+  position: absolute;
+  top: 11%;
+  left: 10%;
+  z-index: -1;
+}
