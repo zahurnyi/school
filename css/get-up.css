@@ -1,0 +1,56 @@
+.get-up {
+  background-color: #fff;
+	padding: 100px 0px 175px 0px;
+}
+.get-up__row {
+  display: flex;
+  align-items: center;
+}
+.get-up__column {
+  margin: 0px 500px 98px 0px;
+}
+.get-up__title {
+  margin: 0px 0px 100px 0px;
+  width: 430px;
+}
+.get-up__cards {
+  display: flex;
+}
+.get-up__card {
+}
+.get-up__card:first-child {
+  margin: 0px 100px 0px 0px;
+  position: relative;
+}
+.get-up__card:first-child:after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 2px;
+  background-color: #e4e4e4;
+  position: absolute;
+  top: 0%;
+  right: -25%;
+}
+.card-get-up {
+}
+.card-get-up__logo {
+  margin: 0px 0px 60px 0px;
+}
+.card-get-up__label {
+  margin: 0px 0px 20px 0px;
+}
+.card-get-up__title {
+}
+.item__title {
+}
+.card-get-up__text {
+}
+.get-up__tutors {
+  box-shadow: 4px -67px 0px 18px rgba(0, 0, 0, 1);
+	border-radius: 14px;
+}
+.get-up__tutor {
+}
+.get-up__img {
+}
