@@ -4,6 +4,7 @@
 @import url(header.css);
 @import url(companies.css);
 @import url(features.css);
+@import url(language.css);
 
 body {
   font-family: Montserrat, sans-serif;
