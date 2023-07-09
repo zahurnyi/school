@@ -8,12 +8,12 @@
   font-family: Montserrat;
   font-size: 22px;
   font-style: normal;
-	position: relative;
+  position: relative;
 }
 
 .button__main::after {
-	content: "";
-	display: inline-block;
+  content: "";
+  display: inline-block;
   position: absolute;
   top: 50%;
   right: 5px;
@@ -21,4 +21,16 @@
   width: 45px;
   height: 45px;
   /* background-image: url("../img/first-screen/akar-icons_arrow-up-right.png"); */
+}
+
+.button__buy {
+  display: block;
+  padding: 15px 108px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 500;
+	border-radius: 10px;
 }

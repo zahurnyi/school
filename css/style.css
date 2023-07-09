@@ -6,12 +6,13 @@
 @import url(features.css);
 @import url(language.css);
 @import url(get-up.css);
+@import url(package.css);
 
 body {
   font-family: Montserrat, sans-serif;
 }
 .wrapper {
-  background-color: #9b9b9b;
+  background-color: #481186;
   overflow: hidden;
   min-height: 100%;
   display: flex;
