@@ -1,0 +1,283 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: inherit;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+html,
+body {
+  line-height: 1;
+  font-size: 14px;
+}
+
+button {
+  cursor: pointer;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+.wrapper {
+  background-color: #9b9b9b;
+  overflow: hidden;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav {
+  line-height: normal;
+  font-size: 22px;
+  font-weight: 250;
+  line-height: 1;
+}
+.nav__list {
+  display: flex;
+}
+.nav__item:not(:last-child) {
+  margin: 0 26px 0 0;
+}
+.nav__item:not(:last-child):not(:first-child)::after {
+  content: "";
+  width: 3px;
+  height: 3px;
+  background-color: #000;
+  display: inline-block;
+  position: relative;
+  top: -15%;
+  left: 10%;
+}
+.nav__link-btn {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-color: black;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 0px 50px 0px 0px;
+}
+.nav__link {
+  color: #000;
+  position: relative;
+  text-decoration: none;
+  overflow: hidden;
+}
+.nav__link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.3s ease;
+  transform: translateX(-50%);
+}
+.nav__link:hover::before {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Source Code Pro";
+  font-style: normal;
+  line-height: normal;
+  background-color: #f4f4f4;
+  height: 100vh;
+  position: relative;
+}
+.header__row {
+  display: flex;
+  height: 100%;
+  padding: 60px 0px 0px 0px;
+  position: relative;
+}
+.header__about {
+  width: 50%;
+  margin: 0 auto 0 0;
+}
+.header__top {
+  margin: 0px 0px 85px 0px;
+}
+.header__nav {
+  line-height: normal;
+  font-size: 22px;
+  font-weight: 250;
+}
+.header__article {
+  font-size: 60px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  margin: 0 30px 145px 0;
+  position: relative;
+}
+.header__article::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background: url("../img/first-screen/bad-lines.png");
+  width: 76px;
+  height: 74px;
+  bottom: -60%;
+  left: 0;
+}
+.header__article-btn {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-color: black;
+  border-radius: 50%;
+  color: black;
+}
+.header__article-btn::after {
+  content: "</>";
+  padding: 0px -20px;
+  margin: 0px -20px;
+  display: inline-block;
+  color: white;
+}
+.header__describe {
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 375px;
+  margin: 0 0 118px 0;
+}
+.header__image {
+  position: absolute;
+  background-color: #000;
+  z-index: 1;
+  width: 50%;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 720px;
+}
+.header__man {
+  position: relative;
+  bottom: -16%;
+  left: 20%;
+}
+.header__code {
+  position: absolute;
+  bottom: 11%;
+  left: -30%;
+  z-index: -1;
+}
+.header__line {
+  position: absolute;
+  top: 20%;
+  right: 0%;
+  z-index: -1;
+}
+.header__icon {
+  position: absolute;
+  bottom: -10%;
+  right: 17%;
+}
+.header__skill {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 18.5px 123px 18.5px 67px;
+  background: rgba(1, 1, 1, 0.5);
+  -webkit-backdrop-filter: blur(7.5px);
+          backdrop-filter: blur(7.5px);
+}
+.header__skill-btn {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  stroke-width: 1px;
+  stroke: #ff4f4f;
+  background-color: #ff4f4f;
+  border-radius: 50%;
+}
+.header__skill-name {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 250;
+}
+
+.button__main {
+  display: inline-block;
+  padding: 15px 29px;
+  border-radius: 2px;
+  background: #010101;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-style: normal;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+.button__main:hover {
+  background-color: #fff;
+  color: black;
+  border: 1px solid #000;
+}
+.button__main:hover path {
+  stroke: black;
+}
