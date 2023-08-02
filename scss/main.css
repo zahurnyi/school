@@ -1,3 +1,4 @@
+/* Default setting */
 * {
   padding: 0;
   margin: 0;
@@ -76,6 +77,46 @@ body {
   padding: 0 20px;
 }
 
+/* Variables */
+.button__main {
+  display: inline-block;
+  padding: 15px 29px;
+  border-radius: 2px;
+  background: #010101;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-style: normal;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+.button__main:hover {
+  background-color: #fff;
+  color: black;
+  border: 1px solid #000;
+}
+.button__main:hover path {
+  stroke: black;
+}
+.main__title {
+  font-size: 60px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+.second__title {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* Blocks */
 .nav {
   line-height: normal;
   font-size: 22px;
@@ -258,26 +299,42 @@ body {
   font-weight: 250;
 }
 
-.button__main {
-  display: inline-block;
-  padding: 15px 29px;
-  border-radius: 2px;
-  background: #010101;
-  color: #fff;
-  font-family: Montserrat;
-  font-size: 22px;
-  font-style: normal;
-  position: relative;
+.language {
+  background-color: #fff;
+  padding: 176px 0px 157px 0px;
+}
+.language__row {
   display: flex;
   align-items: center;
-  gap: 10px;
-  transition: all 0.3s ease;
 }
-.button__main:hover {
-  background-color: #fff;
-  color: black;
-  border: 1px solid #000;
+.language__code {
+  margin: 0px 170px 0px 0px;
+  position: relative;
 }
-.button__main:hover path {
-  stroke: black;
+.language__code::after {
+  content: "";
+  background: url("../img/language-pages/icon-park_caution.png") 0 0 no-repeat;
+  display: inline-block;
+  width: 195px;
+  height: 195px;
+  position: absolute;
+  top: 30%;
+  left: 79%;
+}
+.language__title {
+  margin: 0px 0px 35px 0px;
+}
+.language__describe {
+  color: #000;
+  font-family: Aeonik;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: normal;
+  margin: 0px 0px 48px 0px;
+  font-family: Montserrat;
+}
+
+.second__title {
+  color: #000;
 }

@@ -1,5 +1,15 @@
+/* Default setting */
+
 @import './blocks/reset';
 @import './blocks/wrapper';
+
+/* Variables */
+
+@import './variables/buttons';
+@import './variables/titles';
+
+/* Blocks */
+
 @import './blocks/nav';
 @import './blocks/header';
-@import './variables/buttons';
+@import './blocks/language';
