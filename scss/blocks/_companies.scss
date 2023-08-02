@@ -1,0 +1,19 @@
+.companies {
+  background: #fff;
+  padding: 50px 0;
+  &__row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+		flex-wrap: wrap;
+  }
+
+  &__item {
+  }
+
+  &__link {
+  }
+
+  &__image {
+  }
+}

@@ -258,6 +258,16 @@ body {
   font-weight: 250;
 }
 
+.companies {
+  background: #fff;
+  padding: 50px 0;
+}
+.companies__row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .button__main {
   display: inline-block;
   padding: 15px 29px;
