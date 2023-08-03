@@ -1,17 +1,19 @@
 .button {
+  color: #fff;
   &__main {
-    display: inline-block;
+		display: inline-block;
+		font-family: Aeonik;
+		font-size: 22px;
+		font-weight: 500;
+		font-style: normal;
     padding: 15px 29px;
     border-radius: 2px;
     background: #010101;
     color: #fff;
-    font-family: Montserrat;
-    font-size: 22px;
-    font-style: normal;
     position: relative;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     transition: all 0.3s ease;
 
     &:hover {

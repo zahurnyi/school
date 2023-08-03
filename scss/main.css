@@ -1,3 +1,4 @@
+/* Default setting */
 * {
   padding: 0;
   margin: 0;
@@ -58,13 +59,19 @@ h6 {
   font-weight: inherit;
 }
 
-body {
-  font-family: Montserrat, sans-serif;
+@font-face {
+  font-family: "Aeonik";
+  src: url("../fonts/AeonikTRIAL-Regular.woff") format("woff");
+  font-weight: 250;
+  font-size: normal;
 }
-
+@font-face {
+  font-family: "Aeonik";
+  src: url("../fonts/AeonikTRIAL-Bold.woff") format("woff");
+  font-weight: 500;
+}
 .wrapper {
   background-color: #9b9b9b;
-  overflow: hidden;
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -73,30 +80,77 @@ body {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 0 0 50px;
 }
 
+/* Variables */
+.button {
+  color: #fff;
+}
+.button__main {
+  display: inline-block;
+  font-family: Aeonik;
+  font-size: 22px;
+  font-weight: 500;
+  font-style: normal;
+  padding: 15px 29px;
+  border-radius: 2px;
+  background: #010101;
+  color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.3s ease;
+}
+.button__main:hover {
+  background-color: #fff;
+  color: black;
+  border: 1px solid #000;
+}
+.button__main:hover path {
+  stroke: black;
+}
+.main__title {
+  font-size: 60px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+.second__title {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* Blocks */
 .nav {
   line-height: normal;
   font-size: 22px;
   font-weight: 250;
   line-height: 1;
+  font-family: Aeonik;
 }
 .nav__list {
   display: flex;
+  align-items: center;
 }
 .nav__item:not(:last-child) {
-  margin: 0 26px 0 0;
+  margin: 0 50px 0 0;
 }
-.nav__item:not(:last-child):not(:first-child)::after {
+.nav__item:not(:last-child):not(:first-child)::before {
   content: "";
   width: 3px;
   height: 3px;
   background-color: #000;
   display: inline-block;
   position: relative;
-  top: -15%;
-  left: 10%;
+  top: 0%;
+  left: 125%;
+  margin: 5px 0px;
 }
 .nav__link-btn {
   display: inline-block;
@@ -110,7 +164,7 @@ body {
   align-items: center;
   justify-content: center;
   color: white;
-  margin: 0px 50px 0px 0px;
+  margin: 0px 30px 0px 0px;
 }
 .nav__link {
   color: #000;
@@ -140,7 +194,7 @@ body {
   font-style: normal;
   line-height: normal;
   background-color: #f4f4f4;
-  height: 100vh;
+  height: 905px;
   position: relative;
 }
 .header__row {
@@ -151,7 +205,7 @@ body {
 }
 .header__about {
   width: 50%;
-  margin: 0 auto 0 0;
+  margin: 0 80px 0 0;
 }
 .header__top {
   margin: 0px 0px 85px 0px;
@@ -197,48 +251,48 @@ body {
   font-size: 16px;
   font-weight: 400;
   max-width: 375px;
-  margin: 0 0 118px 0;
+  margin: 0 0 117px 0;
 }
 .header__image {
   position: absolute;
   background-color: #000;
   z-index: 1;
   width: 50%;
+  width: 706px;
   top: 0;
   right: 0;
-  height: 100vh;
-  width: 720px;
+  height: 905px;
 }
 .header__man {
-  position: relative;
-  bottom: -16%;
-  left: 20%;
+  position: absolute;
+  top: 16%;
+  left: 21%;
 }
 .header__code {
   position: absolute;
-  bottom: 11%;
-  left: -30%;
+  top: 40%;
+  left: -31%;
   z-index: -1;
 }
 .header__line {
   position: absolute;
-  top: 20%;
-  right: 0%;
+  top: 21%;
+  left: 11%;
   z-index: -1;
 }
 .header__icon {
   position: absolute;
-  bottom: -10%;
-  right: 17%;
+  top: 81%;
+  left: 50%;
 }
 .header__skill {
   display: flex;
   align-items: center;
   gap: 17px;
   position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 18.5px 123px 18.5px 67px;
+  top: 92%;
+  left: 0%;
+  padding: 18.5px 123px 18.5px 45px;
   background: rgba(1, 1, 1, 0.5);
   -webkit-backdrop-filter: blur(7.5px);
           backdrop-filter: blur(7.5px);
@@ -256,28 +310,4 @@ body {
   color: #fff;
   font-size: 20px;
   font-weight: 250;
-}
-
-.button__main {
-  display: inline-block;
-  padding: 15px 29px;
-  border-radius: 2px;
-  background: #010101;
-  color: #fff;
-  font-family: Montserrat;
-  font-size: 22px;
-  font-style: normal;
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  transition: all 0.3s ease;
-}
-.button__main:hover {
-  background-color: #fff;
-  color: black;
-  border: 1px solid #000;
-}
-.button__main:hover path {
-  stroke: black;
 }
