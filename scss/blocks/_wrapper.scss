@@ -2,12 +2,21 @@
   font-family: "Aeonik";
   src: url("../fonts/AeonikTRIAL-Regular.woff") format("woff");
   font-weight: 250;
-  font-size: normal;
+}
+@font-face {
+  font-family: "Aeonik";
+  src: url("../fonts/AeonikTRIAL-Regular.woff") format("woff");
+  font-weight: 400;
 }
 @font-face {
   font-family: "Aeonik";
   src: url("../fonts/AeonikTRIAL-Bold.woff") format("woff");
   font-weight: 500;
+}
+@font-face {
+  font-family: "Aeonik";
+  src: url("../fonts/AeonikTRIAL-Bold.woff") format("woff");
+  font-weight: 700;
 }
 
 body {
@@ -22,7 +31,18 @@ body {
 }
 
 .container {
-  max-width: 1440px;
+  width: 1440px;
   margin: 0 auto;
   padding: 0 0 0 50px;
+
+  @media (min-width: 1460px) {
+    width: 100%;
+  }
+
+  @media (max-width: 788px) {
+    padding: 0px 0px 0px 20px;
+  }
+  @media (max-width: 400px) {
+		padding: 0px 0px 0px 0px;
+  }
 }

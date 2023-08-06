@@ -1,144 +1,264 @@
 .header {
-	display: flex;
-	flex-wrap: wrap;
-	font-family: "Source Code Pro";
-	font-style: normal;
-	line-height: normal;
-	background-color: #f4f4f4;
-	height: 905px;
-	position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Source Code Pro";
+  font-style: normal;
+  line-height: normal;
+  background-color: #f4f4f4;
+  height: 905px;
+  position: relative;
+  @media (max-width: 400px) {
+    height: 100%;
+  }
 
-	&__row {
-		display: flex;
-		height: 100%;
-		padding: 60px 0px 0px 0px;
-		position: relative;
-	}
+  &__row {
+    display: flex;
+    height: 100%;
+    padding: 60px 0px 0px 0px;
+    position: relative;
+    @media (max-width: 1044px) {
+      padding: 40px 0px 0px 0px;
+    }
+    @media (max-width: 400px) {
+      border: 5px solid #000;
+      padding: 23px 0px 0px 11px;
+      margin: 0px 0px 0px 0px;
+    }
+  }
 
-	&__about {
-		width: 50%;
-		margin: 0 80px 0 0;
-	}
+  &__about {
+    width: 50%;
+    margin: 0 80px 0 0;
+    @media (min-width: 1460px) {
+      width: 50%;
+    }
 
-	&__top {
-		margin: 0px 0px 85px 0px;
-	}
+    @media (max-width: 400px) {
+      margin: 0px 0px 0px 0px;
+    }
+  }
 
-	&__nav {
-		line-height: normal;
-		font-size: 22px;
-		font-weight: 250;
-	}
+  &__top {
+    margin: 0px 0px 85px 0px;
 
-	&__article {
-		font-size: 60px;
-		font-weight: 500;
-		letter-spacing: -0.5px;
-		margin: 0 30px 145px 0;
-		position: relative;
+    @media (max-width: 1044px) {
+      margin: 0px 0px 60px 0px;
+    }
+    @media (max-width: 400px) {
+      margin: 0px 0px 54px 0px;
+    }
+  }
 
-		&::after {
-			content: "";
-			position: absolute;
-			display: inline-block;
-			background: url("../img/first-screen/bad-lines.png");
-			width: 76px;
-			height: 74px;
-			bottom: -60%;
-			left: 0;
-		}
-	}
+  &__nav {
+    line-height: normal;
+    font-size: 22px;
+    font-weight: 250;
+  }
 
-	&__article-btn {
-		display: inline-block;
-		width: 32px;
-		height: 32px;
-		background-color: black;
-		border-radius: 50%;
-		color: black;
-		
-		&::after {
-			content: '</>';
-			padding: 0px -20px;
-			margin: 0px -20px;
-			display: inline-block;
-			color: white;
-		}
-	}
+  &__article {
+    font-size: 60px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    margin: 0 30px 145px 0;
+    position: relative;
 
-	&__describe {
-		font-size: 16px;
-		font-weight: 400;
-		max-width: 375px;
-		margin: 0 0 117px 0;
-	}
+    &::after {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      background: url("../img/first-screen/bad-lines.png");
+      width: 76px;
+      height: 74px;
+      bottom: -60%;
+      left: 0;
+      @media (max-width: 1044px) {
+        bottom: -80%;
+      }
 
-	&__button {
-	}
+      @media (max-width: 788px) {
+        bottom: -140%;
+      }
+      @media (max-width: 400px) {
+        bottom: -83%;
+      }
+    }
+    @media (max-width: 1044px) {
+      font-size: 40px;
+      margin: 0 50px 145px 0;
+    }
+    @media (max-width: 788px) {
+      font-size: 36px;
+      margin: 0px 0px 210px 0px;
+    }
+    @media (max-width: 400px) {
+      font-family: Aeonik;
+      font-size: 34px;
+      font-weight: 400;
+      letter-spacing: 0.25px;
+      font-size: 34px;
+      margin: 0px 0px 96px 0px;
+			width: 255px;	
+    }
+  }
 
-	&__image {
-		position: absolute;
-		background-color: #000;
-		z-index: 1;
-		width: 50%;
-		width: 706px;
-		top: 0;
-		right: 0;
-		height: 905px;
-	}
+  &__article-btn {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-color: black;
+    border-radius: 50%;
+    color: black;
 
-	&__man {
-		position: absolute;
-		top: 16%;
-		left: 21%;
-	}
+    &::after {
+      content: "</>";
+      padding: 0px -20px;
+      margin: 0px -20px;
+      display: inline-block;
+      color: white;
+    }
+    @media (max-width: 400px) {
+      width: 24px;
+      height: 24px;
+    }
+  }
 
-	&__code {
-		position: absolute;
-		top: 40%;
-		left: -31%;
-		z-index: -1;
-	}
+  &__describe {
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 375px;
+    margin: 0 0 117px 0;
 
-	&__line {
-		position: absolute;
-		top: 21%;
-		left: 11%;
-		z-index: -1;
-	}
+    @media (max-width: 1044px) {
+      margin: 0px 0px 250px 0px;
+      max-width: 340px;
+      font-size: 20px;
+    }
 
-	&__icon {
-		position: absolute;
-		top: 81%;
-		left: 50%;
-	}
+    @media (max-width: 788px) {
+      margin: 0px 0px 250px 0px;
+    }
+    @media (max-width: 400px) {
+      font-size: 12px;
+      letter-spacing: 0.25px;
+      margin: 0px 0px 26px 0px;
+      width: 280px;
+    }
+  }
 
-	&__skill {
-		display: flex;
-		align-items: center;
-		gap: 17px;
-		position: absolute;
-		top: 92%;
-		left: 0%;
-		padding: 18.5px 123px 18.5px 45px;
-		background: rgba(1, 1, 1, 0.5);
-		backdrop-filter: blur(7.5px);
-	}
+  &__button {
+  }
 
-	&__skill-btn {
-		display: inline-block;
-		width: 30px;
-		height: 30px;
-		stroke-width: 1px;
-		stroke: #ff4f4f;
-		background-color: #ff4f4f;
-		border-radius: 50%;
-	}
+  &__image {
+    position: absolute;
+    background-color: #000;
+    z-index: 1;
+    width: 50%;
+    width: 706px;
+    top: 0;
+    right: 0;
+    height: 905px;
 
-	&__skill-name {
-		color: #fff;
-		font-size: 20px;
-		font-weight: 250;
-	}
+    @media (max-width: 1440px) {
+      width: 50%;
+    }
+    @media (max-width: 1044px) {
+      width: 50%;
+      left: 50%;
+    }
+    @media (max-width: 788px) {
+      width: 55%;
+      left: 50%;
+    }
+    @media (max-width: 400px) {
+      display: none;
+    }
+  }
 
+  &__man {
+    position: absolute;
+    top: 16%;
+    left: 21%;
+    @media (max-width: 1044px) {
+      width: 100%;
+      left: 10%;
+    }
+
+    @media (max-width: 788px) {
+      top: 16%;
+      left: -1%;
+      width: 120%;
+      height: 80%;
+    }
+  }
+
+  &__code {
+    position: absolute;
+    top: 40%;
+    left: -31%;
+    z-index: -1;
+    @media (max-width: 1044px) {
+      width: 100%;
+    }
+
+    @media (max-width: 788px) {
+      top: 60%;
+      left: -45%;
+      height: 35%;
+    }
+  }
+
+  &__line {
+    position: absolute;
+    top: 21%;
+    left: 11%;
+    z-index: -1;
+
+    @media (max-width: 1044px) {
+      width: 100%;
+      left: 0%;
+    }
+
+    @media (max-width: 788px) {
+      top: 20%;
+      height: 500px;
+      width: 100%;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 81%;
+    left: 50%;
+    @media (max-width: 1044px) {
+      display: none;
+    }
+  }
+
+  &__skill {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    position: absolute;
+    top: 92%;
+    left: 0%;
+    padding: 18.5px 123px 18.5px 45px;
+    background: rgba(1, 1, 1, 0.5);
+    backdrop-filter: blur(7.5px);
+  }
+
+  &__skill-btn {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    stroke-width: 1px;
+    stroke: #ff4f4f;
+    background-color: #ff4f4f;
+    border-radius: 50%;
+  }
+
+  &__skill-name {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 250;
+  }
 }

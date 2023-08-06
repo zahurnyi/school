@@ -1,11 +1,11 @@
 .button {
   color: #fff;
   &__main {
-		display: inline-block;
-		font-family: Aeonik;
-		font-size: 22px;
-		font-weight: 500;
-		font-style: normal;
+    display: inline-block;
+    font-family: Aeonik;
+    font-size: 22px;
+    font-weight: 500;
+    font-style: normal;
     padding: 15px 29px;
     border-radius: 2px;
     background: #010101;
@@ -24,6 +24,11 @@
       path {
         stroke: black;
       }
+    }
+
+    @media (max-width: 400px) {
+      font-size: 17px;
+      padding: 5px 12px;
     }
   }
 
