@@ -1,6 +1,13 @@
-@import './blocks/reset';
-@import './blocks/wrapper';
-@import './blocks/nav';
-@import './blocks/header';
-@import './blocks/companies';
-@import './variables/buttons';
+/* Default setting */
+@import "./blocks/reset";
+@import "./blocks/wrapper";
+
+/* Variables */
+@import "./variables/buttons";
+@import "./variables/titles";
+
+/* Blocks */
+@import "./blocks/nav";
+@import "./blocks/header";
+@import "./blocks/companies";
+@import "./variables/buttons";

@@ -5,7 +5,7 @@
 	font-style: normal;
 	line-height: normal;
 	background-color: #f4f4f4;
-	height: 100vh;
+	height: 905px;
 	position: relative;
 
 	&__row {
@@ -17,7 +17,7 @@
 
 	&__about {
 		width: 50%;
-		margin: 0 auto 0 0;
+		margin: 0 80px 0 0;
 	}
 
 	&__top {
@@ -70,7 +70,7 @@
 		font-size: 16px;
 		font-weight: 400;
 		max-width: 375px;
-		margin: 0 0 118px 0;
+		margin: 0 0 117px 0;
 	}
 
 	&__button {
@@ -81,36 +81,36 @@
 		background-color: #000;
 		z-index: 1;
 		width: 50%;
+		width: 706px;
 		top: 0;
 		right: 0;
-		height: 100vh;
-		width: 720px;
+		height: 905px;
 	}
 
 	&__man {
-		position: relative;
-		bottom: -16%;
-		left: 20%;
+		position: absolute;
+		top: 16%;
+		left: 21%;
 	}
 
 	&__code {
 		position: absolute;
-		bottom: 11%;
-		left: -30%;
+		top: 40%;
+		left: -31%;
 		z-index: -1;
 	}
 
 	&__line {
 		position: absolute;
-		top: 20%;
-		right: 0%;
+		top: 21%;
+		left: 11%;
 		z-index: -1;
 	}
 
 	&__icon {
 		position: absolute;
-		bottom: -10%;
-		right: 17%;
+		top: 81%;
+		left: 50%;
 	}
 
 	&__skill {
@@ -118,9 +118,9 @@
 		align-items: center;
 		gap: 17px;
 		position: absolute;
-		bottom: 0;
-		left: 0;
-		padding: 18.5px 123px 18.5px 67px;
+		top: 92%;
+		left: 0%;
+		padding: 18.5px 123px 18.5px 45px;
 		background: rgba(1, 1, 1, 0.5);
 		backdrop-filter: blur(7.5px);
 	}
