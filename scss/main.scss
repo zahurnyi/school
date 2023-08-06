@@ -1,9 +1,12 @@
-@import './blocks/reset';
-@import './blocks/wrapper';
-@import './blocks/titles';
+/* Default setting */
+@import "./blocks/reset";
+@import "./blocks/wrapper";
 
-@import './variables/buttons';
+/* Variables */
+@import "./variables/fonts";
+@import "./variables/buttons";
+@import "./variables/titles";
 
-@import './blocks/header';
-@import './blocks/nav';
-@import './blocks/features';
+/* Blocks */
+@import "./blocks/nav";
+@import "./blocks/header";
