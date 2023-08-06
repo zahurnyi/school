@@ -59,6 +59,14 @@ h6 {
   font-weight: inherit;
 }
 
+.wrapper {
+  background-color: #9b9b9b;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Variables */
 @font-face {
   font-family: "Aeonik";
   src: url("../fonts/AeonikTRIAL-Regular.woff") format("woff");
@@ -70,20 +78,6 @@ h6 {
   src: url("../fonts/AeonikTRIAL-Bold.woff") format("woff");
   font-weight: 500;
 }
-.wrapper {
-  background-color: #9b9b9b;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 0 0 50px;
-}
-
-/* Variables */
 .button {
   color: #fff;
 }
@@ -196,6 +190,11 @@ h6 {
   background-color: #f4f4f4;
   height: 905px;
   position: relative;
+}
+.header__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 0 0 50px;
 }
 .header__row {
   display: flex;
