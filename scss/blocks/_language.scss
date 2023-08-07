@@ -1,13 +1,17 @@
 .language {
   background-color: #fff;
-	padding: 176px 0px 157px 0px;
+  padding: 124px 0px 0px 70px;
+
+  &__container {
+    // max-width: 1202px;
+    // align-items: center;
+  }
   &__row {
     display: flex;
-    align-items: center;
   }
 
   &__code {
-    margin: 0px 170px 0px 0px;
+    margin: 0px 114px 0px 0px;
     position: relative;
 
     &::after {
@@ -27,6 +31,7 @@
   }
 
   &__column {
+		margin: 101px 0px 0px 0px;
   }
 
   &__title {
@@ -38,11 +43,14 @@
     font-family: Aeonik;
     font-size: 22px;
     font-style: normal;
-    font-weight: 250;
+    font-weight: 40;
     line-height: normal;
-		margin: 0px 0px 48px 0px;
-		font-family: Montserrat;
+    margin: 0px 0px 61px 0px;
   }
+
+	&__button {
+		padding: 15px 29px;
+	}
 }
 
 .second {
@@ -51,6 +59,7 @@
   }
 }
 .button {
+	display: inline-block;
   &__main {
   }
 }

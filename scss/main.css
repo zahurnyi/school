@@ -91,8 +91,7 @@ h6 {
   font-family: Aeonik;
   font-size: 22px;
   font-weight: 500;
-  font-style: normal;
-  padding: 15px 29px;
+  padding: 15px 30px;
   border-radius: 2px;
   background: #010101;
   color: #fff;
@@ -118,7 +117,7 @@ h6 {
 
 .second__title {
   color: #000;
-  font-family: Montserrat;
+  font-family: Aeonik;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -413,4 +412,52 @@ h6 {
   line-height: 22px; /* 137.5% */
   letter-spacing: 0.1px;
   max-width: 160px;
+}
+
+.language {
+  background-color: #fff;
+  padding: 124px 0px 0px 70px;
+}
+.language__row {
+  display: flex;
+}
+.language__code {
+  margin: 0px 114px 0px 0px;
+  position: relative;
+}
+.language__code::after {
+  content: "";
+  background: url("../img/language-pages/icon-park_caution.png") 0 0 no-repeat;
+  display: inline-block;
+  width: 195px;
+  height: 195px;
+  position: absolute;
+  top: 30%;
+  left: 79%;
+}
+.language__column {
+  margin: 101px 0px 0px 0px;
+}
+.language__title {
+  margin: 0px 0px 35px 0px;
+}
+.language__describe {
+  color: #000;
+  font-family: Aeonik;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 40;
+  line-height: normal;
+  margin: 0px 0px 61px 0px;
+}
+.language__button {
+  padding: 15px 29px;
+}
+
+.second__title {
+  color: #000;
+}
+
+.button {
+  display: inline-block;
 }
