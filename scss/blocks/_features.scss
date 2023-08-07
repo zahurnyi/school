@@ -1,6 +1,10 @@
 .features {
   background-color: #f4f4f4;
-  padding: 80px 0px 54px 0px;
+  padding: 140px 0px 56px 50px;
+
+  &__container {
+    // padding: 0px 0px 0px 10px;
+  }
 
   &__row {
     display: flex;
@@ -12,22 +16,23 @@
   &__column {
     // flex: 0 1 33.333%;
     padding: 0px 20px;
-    margin: 0 50px 0 0;
+    margin: 0 72px 0 0;
   }
 
   &__title {
+    font-family: Aeonik;
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0px 0px 52px 0px;
     min-width: 450px;
-    margin: 0px 0px 46px 0px;
   }
 
   &__description {
-    color: #000;
-    font-family: Montserrat;
+    font-family: Aeonik;
     font-size: 22px;
-    font-style: normal;
-    font-weight: 250;
-    line-height: normal;
+    font-weight: 300;
     width: 288px;
+		line-height: 1.2;
   }
 
   &__items {
