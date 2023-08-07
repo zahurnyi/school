@@ -310,3 +310,44 @@ h6 {
   font-size: 20px;
   font-weight: 250;
 }
+
+.companies {
+  background: #fff;
+  padding: 70px 0;
+}
+.companies__container {
+  padding: 0px 130px;
+}
+.companies__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.button {
+  color: #fff;
+}
+.button__main {
+  display: inline-block;
+  font-family: Aeonik;
+  font-size: 22px;
+  font-weight: 500;
+  font-style: normal;
+  padding: 15px 29px;
+  border-radius: 2px;
+  background: #010101;
+  color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.3s ease;
+}
+.button__main:hover {
+  background-color: #fff;
+  color: black;
+  border: 1px solid #000;
+}
+.button__main:hover path {
+  stroke: black;
+}
