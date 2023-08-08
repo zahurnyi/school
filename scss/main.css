@@ -70,13 +70,18 @@ h6 {
 @font-face {
   font-family: "Aeonik";
   src: url("../fonts/AeonikTRIAL-Regular.woff") format("woff");
-  font-weight: 250;
+  font-weight: 400;
   font-size: normal;
 }
 @font-face {
   font-family: "Aeonik";
   src: url("../fonts/AeonikTRIAL-Bold.woff") format("woff");
   font-weight: 500;
+}
+@font-face {
+  font-family: "Aeonik";
+  src: url("../fonts/AeonikTRIAL-Bold.woff") format("woff");
+  font-weight: 700;
 }
 .button {
   color: #fff;
@@ -324,30 +329,88 @@ h6 {
   align-items: center;
   flex-wrap: wrap;
 }
-.button {
-  color: #fff;
+.features {
+  background-color: #f4f4f4;
+  padding: 140px 0px 56px 50px;
 }
-.button__main {
-  display: inline-block;
+.features__row {
+  display: flex;
+  align-items: start;
+  margin: 0px -20px;
+}
+.features__column {
+  padding: 0px 20px;
+  margin: 0 72px 0 0;
+}
+.features__title {
+  font-family: Aeonik;
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0px 0px 52px 0px;
+  min-width: 450px;
+}
+.features__description {
   font-family: Aeonik;
   font-size: 22px;
-  font-weight: 500;
-  font-style: normal;
-  padding: 15px 29px;
-  border-radius: 2px;
-  background: #010101;
-  color: #fff;
-  position: relative;
+  font-weight: 300;
+  width: 288px;
+  line-height: 1.2;
+  margin: 0px 0px 87px 0px;
+}
+.features__buttons {
   display: flex;
-  align-items: center;
-  gap: 15px;
-  transition: all 0.3s ease;
+  gap: 14px;
 }
-.button__main:hover {
+.features__button {
+  height: 11px;
+  width: 51px;
+  background: #CFCFCF;
+}
+.features__button:first-child {
+  width: 82px;
+  background-color: #DDF247;
+}
+.features__items {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  gap: 39px;
+}
+.features__item {
   background-color: #fff;
-  color: black;
-  border: 1px solid #000;
+  border-radius: 15px;
 }
-.button__main:hover path {
-  stroke: black;
+.features__item:nth-child(even) {
+  background-color: #DDF247;
+}
+
+.item {
+  background-color: #fff;
+  padding: 35px 101px 35px 30px;
+  border-radius: 15px;
+}
+.item__logo {
+  display: inline-block;
+  border-radius: 10px;
+  margin: 0px 0px 62px 0px;
+  background-color: #fff;
+  padding: 21px 21px 22px 22px;
+}
+.item__title {
+  color: #000;
+  font-family: Aeonik;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.25px;
+  margin: 0px 0px 17px 0px;
+}
+.item__describe {
+  color: #000;
+  font-family: Aeonik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px; /* 137.5% */
+  letter-spacing: 0.1px;
+  max-width: 160px;
 }

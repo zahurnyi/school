@@ -1,0 +1,104 @@
+.features {
+  background-color: #f4f4f4;
+  padding: 140px 0px 56px 50px;
+
+  &__container {
+  }
+
+  &__row {
+    display: flex;
+    align-items: start;
+    margin: 0px -20px;
+  }
+
+  &__column {
+    padding: 0px 20px;
+    margin: 0 72px 0 0;
+  }
+
+  &__title {
+    font-family: Aeonik;
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0px 0px 52px 0px;
+    min-width: 450px;
+  }
+
+  &__description {
+    font-family: Aeonik;
+    font-size: 22px;
+    font-weight: 300;
+    width: 288px;
+    line-height: 1.2;
+		margin: 0px 0px 87px 0px;
+  }
+
+	&__buttons {
+		display: flex;
+		gap: 14px;
+
+	}
+
+	&__button {
+		height: 11px;
+		width: 51px;
+		background: #CFCFCF;
+
+		&:first-child {
+			width: 82px;
+			background-color: #DDF247;
+		}
+	}
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: 39px;
+  }
+
+  &__item {
+    background-color: #fff;
+    border-radius: 15px;
+
+    &:nth-child(even) {
+      background-color: #DDF247;
+    }
+  }
+}
+
+.item {
+  background-color: #fff;
+  padding: 35px 101px 35px 30px;
+  border-radius: 15px;
+
+  &__logo {
+    display: inline-block;
+    border-radius: 10px;
+    margin: 0px 0px 62px 0px;
+    background-color: #fff;
+    padding: 21px 21px 22px 22px;
+  }
+
+  &__img {
+  }
+  &__title {
+    color: #000;
+    font-family: Aeonik;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.25px;
+    margin: 0px 0px 17px 0px;
+  }
+
+  &__describe {
+    color: #000;
+    font-family: Aeonik;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px; /* 137.5% */
+    letter-spacing: 0.1px;
+    max-width: 160px;
+  }
+}
