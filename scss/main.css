@@ -461,3 +461,67 @@ h6 {
 .button {
   display: inline-block;
 }
+.get-up {
+  background-color: #fff;
+  padding: 204px 0px 0px 0px;
+}
+.get-up__container {
+  padding: 0px 50px;
+}
+.get-up__body {
+  display: flex;
+  align-items: center;
+}
+.get-up__column {
+  margin: 0px 286px 0px 0px;
+}
+.get-up__title {
+  margin: 0px 0px 108px 0px;
+  max-width: 431px;
+}
+.get-up__cards {
+  display: flex;
+}
+.get-up__card {
+  position: relative;
+}
+.get-up__card:not(:last-child) {
+  margin: 0px 109px 0px 0px;
+}
+.get-up__card:first-child::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 1px;
+  position: absolute;
+  top: 0;
+  left: 120%;
+  background: #e4e4e4;
+}
+.get-up__card-logo {
+  margin: 0px 0px 60px 0px;
+}
+.get-up__card-title {
+  color: #000;
+  font-family: Aeonik;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 0.25px;
+  margin: 0px 0px 19px 0px;
+}
+.get-up__card-text {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px; /* 137.5% */
+  letter-spacing: 0.1px;
+  max-width: 224px;
+}
+.get-up__tutors {
+  box-shadow: 4px -67px 0px 18px rgb(0, 0, 0);
+  border-radius: 13.158px;
+  height: 490px;
+}
+.get-up__tutors-img {
+  margin: -57px 0px 0px 0px;
+}
