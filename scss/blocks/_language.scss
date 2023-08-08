@@ -1,0 +1,65 @@
+.language {
+  background-color: #fff;
+  padding: 124px 0px 0px 70px;
+
+  &__container {
+    // max-width: 1202px;
+    // align-items: center;
+  }
+  &__row {
+    display: flex;
+  }
+
+  &__code {
+    margin: 0px 114px 0px 0px;
+    position: relative;
+
+    &::after {
+      content: "";
+      background: url("../img/language-pages/icon-park_caution.png") 0 0
+        no-repeat;
+      display: inline-block;
+      width: 195px;
+      height: 195px;
+      position: absolute;
+      top: 30%;
+      left: 79%;
+    }
+  }
+
+  &__code-example {
+  }
+
+  &__column {
+		margin: 101px 0px 0px 0px;
+  }
+
+  &__title {
+    margin: 0px 0px 35px 0px;
+  }
+
+  &__describe {
+    color: #000;
+    font-family: Aeonik;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 40;
+    line-height: normal;
+    margin: 0px 0px 61px 0px;
+  }
+
+	&__button {
+		padding: 15px 29px;
+	}
+}
+
+.second {
+  &__title {
+    color: #000;
+  }
+}
+.button {
+	display: inline-block;
+  &__main {
+  }
+}
