@@ -64,6 +64,7 @@ h6 {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 /* Variables */
@@ -96,6 +97,7 @@ h6 {
   align-items: center;
   gap: 15px;
   transition: all 0.3s ease;
+  border: 1px solid #fff;
 }
 .button__main:hover {
   background-color: #fff;
@@ -199,7 +201,7 @@ h6 {
 .header__row {
   display: flex;
   height: 100%;
-  padding: 60px 0px 0px 0px;
+  padding: 66px 0px 0px 0px;
   position: relative;
 }
 .header__about {
@@ -218,7 +220,7 @@ h6 {
   font-size: 60px;
   font-weight: 500;
   letter-spacing: -0.5px;
-  margin: 0 30px 145px 0;
+  margin: 0 30px 138px 0;
   position: relative;
 }
 .header__article::after {
@@ -228,7 +230,7 @@ h6 {
   background: url("../img/first-screen/bad-lines.png");
   width: 76px;
   height: 74px;
-  bottom: -60%;
+  bottom: -64%;
   left: 0;
 }
 .header__article-btn {
@@ -238,6 +240,7 @@ h6 {
   background-color: black;
   border-radius: 50%;
   color: black;
+  transform: translate(8px, -18px);
 }
 .header__article-btn::after {
   content: "</>";
@@ -250,48 +253,49 @@ h6 {
   font-size: 16px;
   font-weight: 400;
   max-width: 375px;
-  margin: 0 0 117px 0;
+  line-height: 25px;
+  margin: 0 0 107px 0;
 }
 .header__image {
   position: absolute;
   background-color: #000;
   z-index: 1;
   width: 50%;
-  width: 706px;
+  width: 691px;
   top: 0;
   right: 0;
-  height: 905px;
+  height: 903px;
 }
 .header__man {
   position: absolute;
-  top: 16%;
-  left: 21%;
+  top: 17%;
+  left: 22%;
 }
 .header__code {
   position: absolute;
-  top: 40%;
-  left: -31%;
+  top: 368px;
+  left: -219px;
   z-index: -1;
 }
 .header__line {
   position: absolute;
-  top: 21%;
+  top: 195px;
   left: 11%;
   z-index: -1;
 }
 .header__icon {
   position: absolute;
-  top: 81%;
-  left: 50%;
+  top: 82%;
+  left: 51%;
 }
 .header__skill {
   display: flex;
   align-items: center;
   gap: 17px;
   position: absolute;
-  top: 92%;
+  top: 843px;
   left: 0%;
-  padding: 18.5px 123px 18.5px 45px;
+  padding: 18.5px 169px 11.5px 64px;
   background: rgba(1, 1, 1, 0.5);
   -webkit-backdrop-filter: blur(7.5px);
           backdrop-filter: blur(7.5px);
@@ -307,6 +311,7 @@ h6 {
 }
 .header__skill-name {
   color: #fff;
+  font-family: Aeonik;
   font-size: 20px;
   font-weight: 250;
 }

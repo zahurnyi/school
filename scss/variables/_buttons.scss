@@ -1,11 +1,11 @@
 .button {
   color: #fff;
   &__main {
-		display: inline-block;
-		font-family: Aeonik;
-		font-size: 22px;
-		font-weight: 500;
-		font-style: normal;
+    display: inline-block;
+    font-family: Aeonik;
+    font-size: 22px;
+    font-weight: 500;
+    font-style: normal;
     padding: 15px 29px;
     border-radius: 2px;
     background: #010101;
@@ -15,6 +15,7 @@
     align-items: center;
     gap: 15px;
     transition: all 0.3s ease;
+    border: 1px solid #fff;
 
     &:hover {
       background-color: #fff;
