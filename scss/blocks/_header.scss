@@ -1,0 +1,153 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Source Code Pro";
+  font-style: normal;
+  line-height: normal;
+  background-color: #f4f4f4;
+  height: 905px;
+  position: relative;
+
+  &__container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 0 0 50px;
+  }
+
+  &__row {
+    display: flex;
+    height: 100%;
+    padding: 66px 0px 0px 0px;
+    position: relative;
+  }
+
+  &__about {
+    width: 50%;
+    margin: 0 80px 0 0;
+  }
+
+  &__top {
+    margin: 0px 0px 85px 0px;
+  }
+
+  &__nav {
+    line-height: normal;
+    font-size: 22px;
+    font-weight: 250;
+  }
+
+  &__article {
+    font-size: 60px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    margin: 0 30px 138px 0;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      background: url("../img/first-screen/bad-lines.png");
+      width: 76px;
+      height: 74px;
+      bottom: -64%;
+      left: 0;
+    }
+  }
+
+  &__article-btn {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-color: black;
+    border-radius: 50%;
+    color: black;
+    transform: translate(8px, -18px);
+
+    &::after {
+      content: "</>";
+      padding: 0px -20px;
+      margin: 0px -20px;
+      display: inline-block;
+      color: white;
+    }
+  }
+
+  &__describe {
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 375px;
+		line-height: 25px;
+    margin: 0 0 107px 0;
+  }
+
+  &__button {
+  }
+
+  &__image {
+    position: absolute;
+    background-color: #000;
+    z-index: 1;
+    width: 50%;
+    width: 691px;
+    top: 0;
+    right: 0;
+    height: 903px;
+  }
+
+  &__man {
+    position: absolute;
+    top: 17%;
+    left: 22%;
+  }
+
+  &__code {
+    position: absolute;
+    top: 368px;
+    left: -219px;
+    z-index: -1;
+  }
+
+  &__line {
+    position: absolute;
+    top: 195px;
+    left: 11%;
+    z-index: -1;
+		// width: 516px;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 82%;
+    left: 51%;
+  }
+
+  &__skill {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    position: absolute;
+    top: 843px;
+    left: 0%;
+    padding: 18.5px 169px 11.5px 64px;
+    background: rgba(1, 1, 1, 0.5);
+    backdrop-filter: blur(7.5px);
+  }
+
+  &__skill-btn {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    stroke-width: 1px;
+    stroke: #ff4f4f;
+    background-color: #ff4f4f;
+    border-radius: 50%;
+  }
+
+  &__skill-name {
+    color: #fff;
+    font-family: Aeonik;
+    font-size: 20px;
+    font-weight: 250;
+  }
+}
