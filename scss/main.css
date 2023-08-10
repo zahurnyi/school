@@ -328,13 +328,15 @@ h6 {
   padding: 70px 0;
 }
 .companies__container {
-  padding: 0px 130px;
+  padding: 0px 0 0 130px;
 }
 .companies__row {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+.companies__item:not(:last-child) {
+  margin: 0px 154px 0px 0px;
 }
 .button {
   color: #fff;
@@ -352,8 +354,9 @@ h6 {
   position: relative;
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
   transition: all 0.3s ease;
+  border: 1px solid #fff;
 }
 .button__main:hover {
   background-color: #fff;
