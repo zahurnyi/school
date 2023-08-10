@@ -70,14 +70,21 @@ h6 {
 /* Variables */
 @font-face {
   font-family: "Aeonik";
+  src: url("/school/fonts/AeonikTRIAL-Light.woff") format("woff");
+  font-weight: 200;
+  font-size: normal;
+}
+@font-face {
+  font-family: "Aeonik";
   src: url("../fonts/AeonikTRIAL-Regular.woff") format("woff");
-  font-weight: 250;
+  font-weight: 400;
   font-size: normal;
 }
 @font-face {
   font-family: "Aeonik";
   src: url("../fonts/AeonikTRIAL-Bold.woff") format("woff");
-  font-weight: 500;
+  font-weight: 700;
+  font-size: normal;
 }
 .button {
   color: #fff;
@@ -86,7 +93,7 @@ h6 {
   display: inline-block;
   font-family: Aeonik;
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 700;
   font-style: normal;
   padding: 15px 29px;
   border-radius: 2px;
