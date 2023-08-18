@@ -26,6 +26,7 @@ html,
 body {
   line-height: 1;
   font-size: 14px;
+  width: 100vw;
 }
 
 button {
@@ -208,7 +209,7 @@ h6 {
 .header__row {
   display: flex;
   height: 100%;
-  padding: 66px 0px 0px 0px;
+  padding: 60px 0px 0px 0px;
   position: relative;
 }
 .header__about {
@@ -216,7 +217,7 @@ h6 {
   margin: 0 80px 0 0;
 }
 .header__top {
-  margin: 0px 0px 85px 0px;
+  margin: 0px 0px 82px 0px;
 }
 .header__nav {
   line-height: normal;
@@ -227,7 +228,7 @@ h6 {
   font-size: 60px;
   font-weight: 500;
   letter-spacing: -0.5px;
-  margin: 0 30px 138px 0;
+  margin: 0 30px 141px 0;
   position: relative;
 }
 .header__article::after {
@@ -268,41 +269,37 @@ h6 {
   background-color: #000;
   z-index: 1;
   width: 50%;
-  width: 691px;
+  width: 706px;
   top: 0;
   right: 0;
-  height: 903px;
+  height: 100%;
+  background: url(../img/first-screen/bg-header.png) no-repeat 0 0;
 }
 .header__man {
   position: absolute;
-  top: 17%;
-  left: 22%;
+  bottom: 0;
+  right: 49px;
 }
 .header__code {
   position: absolute;
-  top: 368px;
-  left: -219px;
+  top: 415px;
+  right: 348px;
   z-index: -1;
-}
-.header__line {
-  position: absolute;
-  top: 195px;
-  left: 11%;
-  z-index: -1;
+  box-shadow: 0px 4px 57px 0px rgba(0, 0, 0, 0.15);
 }
 .header__icon {
   position: absolute;
-  top: 82%;
-  left: 51%;
+  right: 85px;
+  bottom: -98px;
 }
 .header__skill {
   display: flex;
   align-items: center;
   gap: 17px;
   position: absolute;
-  top: 843px;
+  top: 837px;
   left: 0%;
-  padding: 18.5px 169px 11.5px 64px;
+  padding: 18.5px 172px 11.5px 64px;
   background: rgba(1, 1, 1, 0.5);
   -webkit-backdrop-filter: blur(7.5px);
           backdrop-filter: blur(7.5px);
@@ -321,4 +318,44 @@ h6 {
   font-family: Aeonik;
   font-size: 20px;
   font-weight: 250;
+}
+
+.companies {
+  background: #fff;
+  padding: 78px 130px;
+}
+.companies__container {
+  display: flex;
+  align-items: center;
+}
+.companies__item:not(:last-child) {
+  margin: 0px 154px 0px 0px;
+}
+.button {
+  color: #fff;
+}
+.button__main {
+  display: inline-block;
+  font-family: Aeonik;
+  font-size: 22px;
+  font-weight: 500;
+  font-style: normal;
+  padding: 15px 29px;
+  border-radius: 2px;
+  background: #010101;
+  color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.3s ease;
+  border: 1px solid #fff;
+}
+.button__main:hover {
+  background-color: #fff;
+  color: black;
+  border: 1px solid #000;
+}
+.button__main:hover path {
+  stroke: black;
 }
