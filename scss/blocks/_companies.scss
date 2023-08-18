@@ -1,21 +1,16 @@
 .companies {
   background: #fff;
-  padding: 70px 0;
+	padding: 78px 130px;
 
   &__container {
-    padding: 0px 0 0 130px;
-  }
-
-  &__row {
-    display: flex;
+		display: flex;
     align-items: center;
-    flex-wrap: wrap;
   }
 
   &__item {
-		&:not(:last-child) {
-			margin: 0px 154px 0px 0px;
-		}
+    &:not(:last-child) {
+      margin: 0px 154px 0px 0px;
+    }
   }
 
   &__link {
