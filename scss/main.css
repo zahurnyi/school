@@ -216,7 +216,7 @@ h6 {
   margin: 0 80px 0 0;
 }
 .header__top {
-  margin: 0px 0px 85px 0px;
+  margin: 0px 0px 82px 0px;
 }
 .header__nav {
   line-height: normal;
@@ -227,7 +227,7 @@ h6 {
   font-size: 60px;
   font-weight: 500;
   letter-spacing: -0.5px;
-  margin: 0 30px 138px 0;
+  margin: 0 30px 141px 0;
   position: relative;
 }
 .header__article::after {
@@ -268,32 +268,28 @@ h6 {
   background-color: #000;
   z-index: 1;
   width: 50%;
-  width: 691px;
+  width: 706px;
   top: 0;
   right: 0;
-  height: 903px;
+  height: 100%;
+  background: url(../img/first-screen/bg-header.png) no-repeat 0 0;
 }
 .header__man {
   position: absolute;
-  top: 17%;
-  left: 22%;
+  bottom: 0;
+  right: 40px;
 }
 .header__code {
   position: absolute;
-  top: 362px;
-  left: -219px;
+  top: 415px;
+  right: 348px;
   z-index: -1;
-}
-.header__line {
-  position: absolute;
-  top: 189px;
-  left: 11%;
-  z-index: -1;
+  box-shadow: 0px 4px 57px 0px rgba(0, 0, 0, 0.15);
 }
 .header__icon {
   position: absolute;
-  top: 82%;
-  left: 51%;
+  right: 85px;
+  bottom: -98px;
 }
 .header__skill {
   display: flex;
