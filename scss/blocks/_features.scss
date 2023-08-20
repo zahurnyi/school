@@ -1,19 +1,19 @@
 .features {
   background-color: #f4f4f4;
-  padding: 140px 0px 56px 50px;
+  padding: 119px 0px 56px 0;
 
   &__container {
-  }
-
-  &__row {
+		width: 1200px;
     display: flex;
-    align-items: start;
-    margin: 0px -20px;
+		// gap: 196px;
+		padding: 0px 0px 0px 50px;
+    // margin: 0px -20px;
   }
-
+	
   &__column {
-    padding: 0px 20px;
-    margin: 0 72px 0 0;
+		margin: 0px 92px 0px 0px;
+    // padding: 0px 20px;
+    // margin: 0 72px 0 0;
   }
 
   &__title {
@@ -29,30 +29,30 @@
     font-size: 22px;
     font-weight: 300;
     width: 288px;
-    line-height: 1.2;
-		margin: 0px 0px 87px 0px;
+    line-height: 1.4;
+    margin: 0px 0px 82px 0px;
   }
 
-	&__buttons {
-		display: flex;
-		gap: 14px;
+  &__buttons {
+    display: flex;
+    gap: 14px;
+  }
 
-	}
+  &__button {
+    height: 11px;
+    width: 51px;
+    background: #cfcfcf;
 
-	&__button {
-		height: 11px;
-		width: 51px;
-		background: #CFCFCF;
-
-		&:first-child {
-			width: 82px;
-			background-color: #DDF247;
-		}
-	}
+    &:first-child {
+      width: 82px;
+      background-color: #ddf247;
+    }
+  }
 
   &__items {
     display: grid;
-    grid-template-columns: repeat(3, max-content);
+    grid-template-columns: repeat(3, 317px);
+		grid-template-rows: 343px;
     gap: 39px;
   }
 
@@ -61,20 +61,20 @@
     border-radius: 15px;
 
     &:nth-child(even) {
-      background-color: #DDF247;
+      background-color: #ddf247;
     }
   }
 }
 
 .item {
   background-color: #fff;
-  padding: 35px 101px 35px 30px;
+  padding: 32px 84px 35px 30px;
   border-radius: 15px;
 
   &__logo {
     display: inline-block;
     border-radius: 10px;
-    margin: 0px 0px 62px 0px;
+    margin: 0px 0px 70px 0px;
     background-color: #fff;
     padding: 21px 21px 22px 22px;
   }
@@ -82,13 +82,12 @@
   &__img {
   }
   &__title {
-    color: #000;
+		color: #000;
     font-family: Aeonik;
     font-size: 34px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 0.25px;
     margin: 0px 0px 17px 0px;
   }
 
