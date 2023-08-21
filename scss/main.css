@@ -131,7 +131,7 @@ h6 {
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  line-height: 60px;
 }
 
 /* Blocks */
@@ -351,7 +351,7 @@ h6 {
   font-family: Aeonik;
   font-size: 48px;
   font-weight: 700;
-  margin: 0px 0px 52px 0px;
+  margin: 0px 0px 41px 0px;
   min-width: 450px;
 }
 .features__description {
@@ -384,9 +384,11 @@ h6 {
 .features__item {
   background-color: #fff;
   border-radius: 15px;
+  transition: 0.3s all;
 }
-.features__item:nth-child(even) {
+.features__item:hover {
   background-color: #ddf247;
+  scale: 1.2;
 }
 
 .item {
@@ -407,7 +409,6 @@ h6 {
   font-size: 34px;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
   margin: 0px 0px 17px 0px;
 }
 .item__describe {

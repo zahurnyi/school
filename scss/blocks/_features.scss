@@ -3,24 +3,20 @@
   padding: 119px 0px 56px 0;
 
   &__container {
-		width: 1200px;
+    width: 1200px;
     display: flex;
-		// gap: 196px;
-		padding: 0px 0px 0px 50px;
-    // margin: 0px -20px;
+    padding: 0px 0px 0px 50px;
   }
-	
+
   &__column {
-		margin: 0px 92px 0px 0px;
-    // padding: 0px 20px;
-    // margin: 0 72px 0 0;
+    margin: 0px 92px 0px 0px;
   }
 
   &__title {
     font-family: Aeonik;
     font-size: 48px;
     font-weight: 700;
-    margin: 0px 0px 52px 0px;
+    margin: 0px 0px 41px 0px;
     min-width: 450px;
   }
 
@@ -52,16 +48,18 @@
   &__items {
     display: grid;
     grid-template-columns: repeat(3, 317px);
-		grid-template-rows: 343px;
+    grid-template-rows: 343px;
     gap: 39px;
   }
 
   &__item {
     background-color: #fff;
     border-radius: 15px;
+		transition: 0.3s all;
 
-    &:nth-child(even) {
+    &:hover {
       background-color: #ddf247;
+      scale: 1.2;
     }
   }
 }
@@ -82,12 +80,11 @@
   &__img {
   }
   &__title {
-		color: #000;
+    color: #000;
     font-family: Aeonik;
     font-size: 34px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
     margin: 0px 0px 17px 0px;
   }
 
