@@ -84,8 +84,12 @@ h6 {
 @font-face {
   font-family: "Aeonik";
   src: url("../fonts/AeonikTRIAL-Bold.woff") format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Aeonik";
+  src: url("../fonts/AeonikTRIAL-Bold.woff") format("woff");
   font-weight: 700;
-  font-size: normal;
 }
 .button {
   color: #fff;
@@ -103,7 +107,7 @@ h6 {
   position: relative;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
   transition: all 0.3s ease;
   border: 1px solid #fff;
 }
@@ -127,7 +131,7 @@ h6 {
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  line-height: 60px;
 }
 
 /* Blocks */
@@ -327,35 +331,93 @@ h6 {
 .companies__container {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .companies__item:not(:last-child) {
   margin: 0px 154px 0px 0px;
 }
-.button {
-  color: #fff;
+.features {
+  background-color: #f4f4f4;
+  padding: 119px 0px 56px 0;
 }
-.button__main {
-  display: inline-block;
+.features__container {
+  width: 1200px;
+  display: flex;
+  padding: 0px 0px 0px 50px;
+}
+.features__column {
+  margin: 0px 92px 0px 0px;
+}
+.features__title {
+  font-family: Aeonik;
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0px 0px 41px 0px;
+  min-width: 450px;
+}
+.features__description {
   font-family: Aeonik;
   font-size: 22px;
-  font-weight: 500;
-  font-style: normal;
-  padding: 15px 29px;
-  border-radius: 2px;
-  background: #010101;
-  color: #fff;
-  position: relative;
+  font-weight: 300;
+  width: 288px;
+  line-height: 1.4;
+  margin: 0px 0px 82px 0px;
+}
+.features__buttons {
   display: flex;
-  align-items: center;
-  gap: 20px;
-  transition: all 0.3s ease;
-  border: 1px solid #fff;
+  gap: 14px;
 }
-.button__main:hover {
+.features__button {
+  height: 11px;
+  width: 51px;
+  background: #cfcfcf;
+}
+.features__button:first-child {
+  width: 82px;
+  background-color: #ddf247;
+}
+.features__items {
+  display: grid;
+  grid-template-columns: repeat(3, 317px);
+  grid-template-rows: 343px;
+  gap: 39px;
+}
+.features__item {
   background-color: #fff;
-  color: black;
-  border: 1px solid #000;
+  border-radius: 15px;
+  transition: 0.3s all;
 }
-.button__main:hover path {
-  stroke: black;
+.features__item:hover {
+  background-color: #ddf247;
+  scale: 1.2;
+}
+
+.item {
+  background-color: #fff;
+  padding: 32px 84px 35px 30px;
+  border-radius: 15px;
+}
+.item__logo {
+  display: inline-block;
+  border-radius: 10px;
+  margin: 0px 0px 70px 0px;
+  background-color: #fff;
+  padding: 21px 21px 22px 22px;
+}
+.item__title {
+  color: #000;
+  font-family: Aeonik;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  margin: 0px 0px 17px 0px;
+}
+.item__describe {
+  color: #000;
+  font-family: Aeonik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px; /* 137.5% */
+  letter-spacing: 0.1px;
+  max-width: 160px;
 }

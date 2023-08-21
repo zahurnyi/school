@@ -10,9 +10,14 @@
   font-weight: 400;
   font-size: normal;
 }
+
+@font-face {
+  font-family: "Aeonik";
+  src: url("../fonts/AeonikTRIAL-Bold.woff") format("woff");
+  font-weight: 500;
+}
 @font-face {
   font-family: "Aeonik";
   src: url("../fonts/AeonikTRIAL-Bold.woff") format("woff");
   font-weight: 700;
-	font-size: normal;
 }
