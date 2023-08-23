@@ -281,3 +281,198 @@ body {
 .button__main:hover path {
   stroke: black;
 }
+/*blocks*/
+.features {
+  background-color: #f4f4f4;
+  padding: 119px 0px 56px 0;
+}
+.features__container {
+  width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  padding: 0px 0px 0px 50px;
+}
+.features__column {
+  margin: 0px 92px 0px 0px;
+}
+.features__title {
+  font-family: Aeonik;
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0px 0px 41px 0px;
+  min-width: 450px;
+}
+.features__description {
+  font-family: Aeonik;
+  font-size: 22px;
+  font-weight: 300;
+  width: 288px;
+  line-height: 1.4;
+  margin: 0px 0px 82px 0px;
+}
+.features__buttons {
+  display: flex;
+  gap: 14px;
+}
+.features__button {
+  height: 11px;
+  width: 51px;
+  background: #cfcfcf;
+}
+.features__button:first-child {
+  width: 82px;
+  background-color: #ddf247;
+}
+.features__items {
+  display: grid;
+  grid-template-columns: repeat(3, 317px);
+  grid-template-rows: 343px;
+  gap: 39px;
+}
+.features__item {
+  background-color: #fff;
+  border-radius: 15px;
+  transition: 0.3s all;
+}
+.features__item:hover {
+  background-color: #ddf247;
+  scale: 1.2;
+}
+
+.item {
+  background-color: #fff;
+  padding: 32px 84px 35px 30px;
+  border-radius: 15px;
+}
+.item__logo {
+  display: inline-block;
+  border-radius: 10px;
+  margin: 0px 0px 70px 0px;
+  background-color: #fff;
+  padding: 21px 21px 22px 22px;
+}
+.item__title {
+  color: #000;
+  font-family: Aeonik;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  margin: 0px 0px 17px 0px;
+}
+.item__describe {
+  color: #000;
+  font-family: Aeonik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px; /* 137.5% */
+  letter-spacing: 0.1px;
+  max-width: 160px;
+}
+
+.get-up {
+  background-color: #fff;
+  padding: 204px 0px 50px 0px;
+}
+.get-up__container {
+  margin: 0 auto;
+  padding: 0px 50px;
+  display: flex;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.get-up__column {
+  margin: 0px 286px 0px 0px;
+}
+.get-up__title {
+  margin: 0px 0px 108px 0px;
+  max-width: 431px;
+}
+.get-up__cards {
+  display: flex;
+}
+.get-up__card {
+  position: relative;
+}
+.get-up__card:not(:last-child) {
+  margin: 0px 60px 0px 0px;
+}
+.get-up__card:first-child::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 1px;
+  position: absolute;
+  top: 0;
+  left: 110%;
+  background: #e4e4e4;
+}
+.get-up__tutors {
+  box-shadow: 4px -67px 0px 18px rgb(0, 0, 0);
+  border-radius: 13.158px;
+  height: 490px;
+  width: 470px;
+}
+.get-up__tutor {
+  position: absolute;
+}
+.card-get-up__logo {
+  margin: 0px 0px 60px 0px;
+}
+.card-get-up__title {
+  margin: 0px 0px 20px 0px;
+}
+.card-get-up__text {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px; /* 137.5% */
+  letter-spacing: 0.1px;
+  max-width: 224px;
+}
+
+.language {
+  background-color: #fff;
+  padding: 123px 0px 0px 70px;
+}
+.language__container {
+  display: flex;
+  align-items: center;
+  width: 1400px;
+  margin: 0 auto;
+}
+.language__code {
+  margin: 0px 114px 0px 0px;
+  position: relative;
+}
+.language__code::after {
+  content: "";
+  background: url("../img/language-pages/icon-park_caution.png") 0 0 no-repeat;
+  display: inline-block;
+  width: 195px;
+  height: 195px;
+  position: absolute;
+  top: 32%;
+  left: 80%;
+}
+.language__title {
+  max-width: 525px;
+  margin: 0px 0px 35px 0px;
+}
+.language__describe {
+  color: #000;
+  font-family: Aeonik;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 40;
+  line-height: normal;
+  margin: 0px 0px 61px 0px;
+  max-width: 449px;
+}
+.second__title {
+  color: #000;
+}
+
+.button {
+  display: inline-block;
+}
