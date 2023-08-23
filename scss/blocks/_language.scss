@@ -4,7 +4,9 @@
 
   &__container {
     display: flex;
-		align-items: center;
+    align-items: center;
+    width: 1400px;
+    margin: 0 auto;
   }
 
   &__code {
@@ -25,14 +27,15 @@
   }
 
   &__code-example {
-		// width: 593px;
-		// height: 380px;
+    // width: 593px;
+    // height: 380px;
   }
 
   &__column-button {
   }
 
   &__title {
+		max-width: 525px;
     margin: 0px 0px 35px 0px;
   }
 
@@ -44,12 +47,12 @@
     font-weight: 40;
     line-height: normal;
     margin: 0px 0px 61px 0px;
-		max-width: 449px;
+    max-width: 449px;
   }
 
-	&__button {
-		// padding: 15px 29px;
-	}
+  &__button {
+    // padding: 15px 29px;
+  }
 }
 
 .second {
@@ -58,7 +61,7 @@
   }
 }
 .button {
-	display: inline-block;
+  display: inline-block;
   &__main {
   }
 }
