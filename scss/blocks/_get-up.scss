@@ -1,14 +1,13 @@
 .get-up {
   background-color: #fff;
-  padding: 204px 0px 0px 0px;
-
+  padding: 204px 0px 50px 0px;
   &__container {
+		margin: 0 auto;
     padding: 0px 50px;
-  }
-
-  &__body {
     display: flex;
     align-items: center;
+		max-width: 1440px;
+		margin: 0 auto;
   }
 
   &__column {
@@ -27,7 +26,7 @@
   &__card {
     position: relative;
     &:not(:last-child) {
-      margin: 0px 109px 0px 0px;
+      margin: 0px 60px 0px 0px;
     }
     &:first-child::after {
       content: "";
@@ -36,28 +35,42 @@
       width: 1px;
       position: absolute;
       top: 0;
-      left: 120%;
+      left: 110%;
       background: #e4e4e4;
     }
   }
 
-  &__card-logo {
+  &__tutors {
+    box-shadow: 4px -67px 0px 18px rgba(0, 0, 0, 1);
+    border-radius: 13.158px;
+    height: 490px;
+		width: 470px;
+  }
+
+  &__tutor {
+		position: absolute;
+  }
+
+  &__img {
+  }
+}
+.second {
+  &__title {
+  }
+}
+.card-get-up {
+  &__logo {
     margin: 0px 0px 60px 0px;
   }
 
-  &__card-img {
+  &__label {
   }
 
-  &__card-title {
-    color: #000;
-    font-family: Aeonik;
-    font-size: 34px;
-    font-weight: 700;
-    letter-spacing: 0.25px;
-    margin: 0px 0px 19px 0px;
+  &__title {
+    margin: 0px 0px 20px 0px;
   }
 
-  &__card-text {
+  &__text {
     font-family: Inter;
     font-size: 16px;
     font-weight: 400;
@@ -65,18 +78,8 @@
     letter-spacing: 0.1px;
     max-width: 224px;
   }
-
-  &__tutors {
-    box-shadow: 4px -67px 0px 18px rgba(0, 0, 0, 1);
-    border-radius: 13.158px;
-    height: 490px;
-  }
-
-  &__tutors-img {
-    margin: -57px 0px 0px 0px;
-  }
 }
-.second {
+.item {
   &__title {
   }
 }
