@@ -27,11 +27,16 @@
       }
     }
   }
-
-  &__main-arrow {
+  &__card {
+    display: inline-block;
+    padding: 15px 108px;
+    border-radius: 10px;
+    background: #fff;
+    color: #ddf247;
+    font-family: Aeonik;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
   }
 }
-
-
-
-
